@@ -15,7 +15,7 @@ a {
 /* Fonts */
 @font-face {
     font-family: Overpass;
-    src: url(/./font/Overpass-VariableFont_wght.ttf);
+    src: url(./font/Overpass-VariableFont_wght.ttf);
 }
 
 /* Root */
