@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------- */
+
+/* global */
+
+/* Fonts */
+@font-face {
+    font-family: Overpass;
+    src: url(/./font/Overpass-VariableFont_wght.ttf);
+}
+
+/* Root */
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsla(216, 12%, 54%, 0.123);
+    --Dark-Blue: hsla(213, 20%, 18%, 0.377);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    font-family: Overpass;
+}
+
+/* ---------------------- */
+/* container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container .card {
+    background-color: var(--Dark-Blue);
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.container .card img{
+    background-color: var(--Medium-Grey);
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.container .card .text {
+    padding: 5px;
+}
+.container .card .text h1 {
+    color: var(--White);
+}
+.container .card .text p {
+    color: var(--Light-Grey);
+    margin-top: 3%;
+}
+
+.container .card .numbers {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 6%;
+    cursor: pointer;
+}
+.container .card .numbers span {
+    height: 40px;
+    width: 40px;
+    color: var(--Light-Grey);
+    background-color: var(--Medium-Grey);
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+.container .card .numbers span:hover {
+    background-color: var(--Orange);
+}
+.container .card .btn {
+    text-align: center;
+}
+.container .card input {
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 90%;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    color: var(--White);
+    margin-bottom: 2%;
+    cursor: pointer;
+    margin-top: 3%;
+}
+.container .card input:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+/* --------------------------------------- */
+
+/* Container(2) */
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    display: none;
+}
+.container2 .card2 {
+    background-color: var(--Dark-Blue);
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container2 .card2 img {
+    padding: 10px;
+    margin-top: 3%;
+}
+.container2 .card2 .text1 {
+    background-color: var(--Medium-Grey);
+    padding: 6px;
+    width: 60%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: var(--Orange);
+    margin-left: 21%;
+    margin-top: 5%;
+}
+.container2 .card2 .text2 h2{
+    color: var(--White);
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+.container2 .card2 .text2 p{
+    color: var(--Light-Grey);
+    margin-bottom: 30px;
+}
+
+.active {
+    background-color: var(--Orange) !important;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 450px) {
+    .container .card .text p {
+        color: var(--Light-Grey);
+        margin-top: 3%;
+        width: 100%;
+        font-size: 13px;
+    }
+    .container .card {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
